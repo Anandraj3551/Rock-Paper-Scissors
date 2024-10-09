@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body class="preload">
+    <div class="container">
+      <header class="header">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+
+        <div class="score2">
+          <div class="score__title">Computer score</div>
+          <div class="score__number2">0</div>
+        </div>
+
+        <div class="score1">
+          <div class="score__title">your score</div>
+          <div class="score__number">0</div>
+        </div>
+      </header>
+      <section class="game">
+        <button class="choice-btn" data-choice="paper">
+          <div class="choice paper">
+            <img src="./images/icon-paper.svg" alt="Paper" />
+          </div>
+        </button>
+        <button class="choice-btn" data-choice="scissors">
+          <div class="choice scissors">
+            <img src="./images/icon-scissors.svg" alt="Scissors" />
+          </div>
+        </button>
+        <button class="choice-btn" data-choice="rock">
+          <div class="choice rock">
+            <img src="./images/icon-rock.svg" alt="Rock" />
+          </div>
+        </button>
+      </section>
+    </div>
+
+    <section class="results hidden">
+      <div class="results__column">
+        <h2 class="results__heading">You picked</h2>
+        <div class="results__result"></div>
+      </div>
+      <div class="results__winner hidden">
+        <h3 class="results__text"></h3>
+        <button class="play-again">Play Again</button>
+      </div>
+      <div class="results__column">
+        <h2 class="results__heading">Pc picked</h2>
+        <div class="results__result"></div>
+      </div>
+    </section>
+
+    <button class="rules-btn" tabindex="1">rules</button>
+    <div class="modal">
+      <div class="modal__container">
+        <header class="modal__header">
+          <h2>Game Rules</h2>
+          <button class="close-btn">
+            <img src="./images/icons8-close-48.png" alt="Close Button" />
+          </button>
+        </header>
+        <div class="rules-content">
+          <h3>How to Play Rock, Paper, Scissors:</h3>
+          <ul>
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rock</li>
+            <li>Choose your move by clicking on the corresponding icon</li>
+            <li>The computer will randomly select its move</li>
+            <li>The winner of each round scores a point</li>
+            <li>First to reach the target score wins the game</li>
+            <li>In case of a tie, no points are awarded</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
