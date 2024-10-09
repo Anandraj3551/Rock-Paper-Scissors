@@ -19,4 +19,4 @@ Choose between 🪨 **Rock**, 📄 **Paper**, or ✂️ **Scissors**, and see if
 
 - **HTML5**: For the structure and layout of the game.
 - **CSS3**: For styling and responsive design.
-- **JavaScript (ES6+)**: To handle game logic, interactivity, and dynamic updates.
+- **JavaScript **: To handle game logic, interactivity, and dynamic updates.
